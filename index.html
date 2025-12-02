@@ -6,6 +6,10 @@
         var audio = new Audio("https://github.com/rocktutman1/rocktutman1.github.io/raw/refs/heads/main/images/listen.m3u");
         audio.play();
     }
+    function toggleDarkMode() {
+    // add the `dark-mode` class to your `<body>` tag
+    document.body.classList.toggle('dark-mode');
+    }
     </script>
     <style>
     @font-face {
@@ -30,6 +34,11 @@
     p{
         line-height: normal;
     }
+    /* set the background color to dark gray and text color to white */
+    .dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
     </style>
     <title>Rocktut land</title>
     <link rel="icon" type="image/x-icon" href="https://github.com/rocktutman1/rocktutman1.github.io/raw/refs/heads/main/images/favicon.ico">
@@ -45,6 +54,7 @@
     <p>I'm a unemployed student at Wheat Ridge and Warren Tech, I used to play drum-set and piano. 
         I also have too many hours on Total War Warhammer 3 (its peak) </p>
     <ul>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <li><a href="https://github.com/rocktutman1?authuser=0">My github account </a></li>
         <li><a href="https://www.linkedin.com/in/ronan-h-786766386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app&authuser=0">My linkedin account</a></li>
     </ul>
