@@ -4,10 +4,7 @@
     <script>
     function playBackgroundMusic() {
         var audio = new Audio("https://github.com/rocktutman1/rocktutman1.github.io/raw/refs/heads/main/images/Vince%20Guaraldi%20Trio%20-%20Christmas%20Time%20Is%20Here%20-%20Vocal.mp3");
-        audio.volume = 0;
-        audio.play().then(() => {
-        audio.volume = 1; // fade in instantly
-    });
+        audio.play()
     }
     function toggleDarkMode() {
     // add the `dark-mode` class to your `<body>` tag
@@ -45,14 +42,12 @@
     </style>
     <p></p><img src="https://github.com/rocktutman1/rocktutman1.github.io/raw/refs/heads/main/images/merry.jpeg" alt="Picture: Merry Christmas!">
     <p></p>
-    <title>Rocktut land</title>
+    <title>Rocktut land -- Click for music </title>
     <link rel="icon" type="image/x-icon" href="https://github.com/rocktutman1/rocktutman1.github.io/raw/refs/heads/main/images/favicon.ico">
 </head>
 <body>
     <script>
-    window.onload = function() {
-        playBackgroundMusic();
-    };
+    document.addEventListener('click', playBackgroundMusic, { once: true });
     </script>
     <h1>Welcome to my website!</h1>
     <h2>About me </h2>
